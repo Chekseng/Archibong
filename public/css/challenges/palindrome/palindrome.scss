@@ -1,0 +1,91 @@
+// STYLING SHEET FOR PALINDROME CHALLENGE TEMPLATE
+body {
+  background-color: var(--secondary-bg);
+}
+
+.palindrome-challenge-section {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 60%;
+
+  .palindrome-challenge-inner {
+    padding-top: 160px;
+
+    .palindrome-description {
+      > h2 {
+        text-align: center;
+        color: var(--secondary-text-color);
+        font-size: 29px;
+      }
+
+      > h4 {
+        color: var(--secondary-text-color);
+        padding: 10px 100px;
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+      }
+
+      > h4:last-child {
+        font-family: "Rubik", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: var(--primary-text-color);
+      }
+    }
+
+    .palindrome-input-container {
+      width: 80%;
+      margin: 0 auto;
+
+      input {
+        width: 100%;
+        padding: 17px 10px;
+        background-color: var(--primary-text-color);
+        border: 1px solid var(--primary-text-color);
+        color: var(--secondary-text-color);
+        font-size: 20px;
+      }
+
+      input::placeholder {
+        color: var(--quatenary-text-color);
+        font-size: 17px;
+        font-style: italic;
+      }
+    }
+
+    .palindrome-buttons {
+      margin: 0 auto;
+      padding-top: 20px;
+      text-align: center;
+
+      button {
+        padding: 13px 25px;
+        background-color: var(--primary-text-color);
+        border: 1px solid var(--primary-text-color);
+        color: var(--secondary-text-color);
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: green;
+        border: 1px solid green;
+      }
+    }
+
+    .palindrome-output {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 20px;
+      .palindrome-error {
+        color: rgb(238, 69, 69);
+      }
+
+      .palindrome-success {
+        color: rgb(52, 238, 52);
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+body {
+  background-color: var(--quatenary-bg);
+}
+
+.title-case-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60%;
+      grid-template-columns: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-case-section .title-case-inner {
+  padding: 170px 0;
+}
+
+.title-case-section .title-case-inner .title-case-description {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.title-case-section .title-case-inner .title-case-description > h2 {
+  font-size: 30px;
+}
+
+.title-case-section .title-case-inner .title-case-description > h4 {
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.title-case-section .title-case-inner .title-case-description > h4:last-child {
+  font-size: 20px;
+  color: var(--primary-text-color);
+  font-weight: bold;
+}
+
+.title-case-section .title-case-inner .title-case-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60%;
+      grid-template-columns: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .title-case-section .title-case-inner .title-case-inputs {
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
+  }
+}
+
+.title-case-section .title-case-inner .title-case-inputs input {
+  padding: 17px 10px;
+  background-color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 17px;
+}
+
+.title-case-section .title-case-inner .title-case-inputs input::-webkit-input-placeholder {
+  color: var(--quatenary-text-color);
+}
+
+.title-case-section .title-case-inner .title-case-inputs input:-ms-input-placeholder {
+  color: var(--quatenary-text-color);
+}
+
+.title-case-section .title-case-inner .title-case-inputs input::-ms-input-placeholder {
+  color: var(--quatenary-text-color);
+}
+
+.title-case-section .title-case-inner .title-case-inputs input::placeholder {
+  color: var(--quatenary-text-color);
+}
+
+.title-case-section .title-case-inner .title-case-button {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.title-case-section .title-case-inner .title-case-button button {
+  background-color: var(--primary-text-color);
+  padding: 13px 25px;
+  border: 1px solid var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.title-case-section .title-case-inner .title-case-button button:hover {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.title-case-section .title-case-inner .title-case-output {
+  color: var(--secondary-text-color);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  color: var(--primary-text-color);
+}
+/*# sourceMappingURL=title-case.css.map */

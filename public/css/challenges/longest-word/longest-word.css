@@ -1,0 +1,103 @@
+body {
+  background-color: var(--secondary-bg);
+}
+
+.longest-word-section {
+  padding: 180px 0;
+}
+
+.longest-word-section .longest-word-inner .longest-word-description {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.longest-word-section .longest-word-inner .longest-word-description > h2 {
+  font-size: 30px;
+}
+
+.longest-word-section .longest-word-inner .longest-word-description > h4 {
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.longest-word-section .longest-word-inner .longest-word-description > h4:last-child {
+  font-size: 20px;
+  color: var(--primary-text-color);
+  font-weight: bold;
+}
+
+.longest-word-section .longest-word-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50%;
+      grid-template-columns: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .longest-word-section .longest-word-inputs {
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
+  }
+}
+
+.longest-word-section .longest-word-inputs input {
+  padding: 17px 10px;
+  background-color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 17px;
+}
+
+.longest-word-section .longest-word-inputs input::-webkit-input-placeholder {
+  color: var(--quatenary-text-color);
+}
+
+.longest-word-section .longest-word-inputs input:-ms-input-placeholder {
+  color: var(--quatenary-text-color);
+}
+
+.longest-word-section .longest-word-inputs input::-ms-input-placeholder {
+  color: var(--quatenary-text-color);
+}
+
+.longest-word-section .longest-word-inputs input::placeholder {
+  color: var(--quatenary-text-color);
+}
+
+.longest-word-section .longest-word-button {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.longest-word-section .longest-word-button button {
+  background-color: var(--primary-text-color);
+  padding: 13px 25px;
+  border: 1px solid var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.longest-word-section .longest-word-button button:hover {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.longest-word-section .longest-word-output {
+  color: var(--secondary-text-color);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  color: var(--primary-text-color);
+}
+/*# sourceMappingURL=longest-word.css.map */

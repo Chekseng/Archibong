@@ -1,0 +1,112 @@
+body {
+  background-color: var(--secondary-bg);
+}
+
+.palindrome-challenge-section {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 60%;
+      grid-template-columns: 60%;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner {
+  padding-top: 160px;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-description > h2 {
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-size: 29px;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-description > h4 {
+  color: var(--secondary-text-color);
+  padding: 10px 100px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-description > h4:last-child {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary-text-color);
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-input-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-input-container input {
+  width: 100%;
+  padding: 17px 10px;
+  background-color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 20px;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-input-container input::-webkit-input-placeholder {
+  color: var(--quatenary-text-color);
+  font-size: 17px;
+  font-style: italic;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-input-container input:-ms-input-placeholder {
+  color: var(--quatenary-text-color);
+  font-size: 17px;
+  font-style: italic;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-input-container input::-ms-input-placeholder {
+  color: var(--quatenary-text-color);
+  font-size: 17px;
+  font-style: italic;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-input-container input::placeholder {
+  color: var(--quatenary-text-color);
+  font-size: 17px;
+  font-style: italic;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-buttons {
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-buttons button {
+  padding: 13px 25px;
+  background-color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-buttons button:hover {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-output {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-output .palindrome-error {
+  color: #ee4545;
+}
+
+.palindrome-challenge-section .palindrome-challenge-inner .palindrome-output .palindrome-success {
+  color: #34ee34;
+}
+/*# sourceMappingURL=palindrome.css.map */

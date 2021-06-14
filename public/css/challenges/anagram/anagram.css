@@ -1,0 +1,127 @@
+body {
+  background-color: var(--secondary-bg);
+}
+
+.anagram-challenge-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50%;
+      grid-template-columns: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .anagram-challenge-section {
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
+  }
+}
+
+.anagram-challenge-section .anagram-description h2 {
+  color: var(--secondary-text-color);
+  text-align: center;
+  padding: 150px 0 10px;
+  font-size: 30px;
+}
+
+.anagram-challenge-section .anagram-description > h4 {
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.anagram-challenge-section .anagram-description > h4:last-child {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: var(--primary-text-color);
+}
+
+.anagram-challenge-section .anagram-description u {
+  color: var(--primary-text-color);
+}
+
+.anagram-challenge-section .anagram-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  grid-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.anagram-challenge-section .anagram-inputs input {
+  width: 100%;
+  padding: 17px 10px;
+  background-color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 17px;
+}
+
+.anagram-challenge-section .anagram-inputs input::-webkit-input-placeholder {
+  color: var(--quatenary-text-color);
+  font-style: italic;
+}
+
+.anagram-challenge-section .anagram-inputs input:-ms-input-placeholder {
+  color: var(--quatenary-text-color);
+  font-style: italic;
+}
+
+.anagram-challenge-section .anagram-inputs input::-ms-input-placeholder {
+  color: var(--quatenary-text-color);
+  font-style: italic;
+}
+
+.anagram-challenge-section .anagram-inputs input::placeholder {
+  color: var(--quatenary-text-color);
+  font-style: italic;
+}
+
+.anagram-challenge-section .anagram-buttons {
+  text-align: center;
+}
+
+.anagram-challenge-section .anagram-buttons button {
+  padding: 13px 25px;
+  background-color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.anagram-challenge-section .anagram-buttons button:hover {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.anagram-challenge-section .anagram-output {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.anagram-challenge-section .anagram-output .anagram-output-one {
+  color: var(--success-text);
+}
+
+.anagram-challenge-section .anagram-output .anagram-output-two {
+  color: var(--failure-text);
+}
+/*# sourceMappingURL=anagram.css.map */

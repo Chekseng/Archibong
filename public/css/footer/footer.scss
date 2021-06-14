@@ -1,0 +1,32 @@
+// THIS IS THE FOOTER STYLESHEET
+
+#footer {
+  background-color: var(--secondary-bg);
+  text-align: center;
+  padding: 40px 0 40px;
+
+  .footer-icons {
+    font-size: 25px;
+    padding-bottom: 10px;
+
+    i {
+      color: var(--secondary-text-color);
+      padding: 0 5px;
+      cursor: pointer;
+    }
+
+    i:hover {
+      color: var(--primary-text-color);
+    }
+  }
+
+  p {
+    padding-bottom: 5px;
+    color: var(--quatenary-text-color);
+  }
+
+  span {
+    color: var(--quatenary-text-color);
+    font-size: 15px;
+  }
+}

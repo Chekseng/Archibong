@@ -1,0 +1,97 @@
+#contact {
+  background-color: var(--secondary-bg);
+  display: -ms-grid;
+  display: grid;
+  padding: 80px 0;
+}
+
+#contact h2 {
+  text-align: center;
+  color: var(--primary-text-color);
+  font-size: 30px;
+}
+
+#contact h4 {
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+#contact .contact-inner {
+  margin: 0 auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+  #contact .contact-inner {
+    width: 80%;
+  }
+}
+
+#contact .contact-inner .contact-form {
+  width: 100%;
+}
+
+#contact .contact-inner .contact-form .form-control label {
+  display: block;
+  font-size: 20px;
+  color: var(--quatenary-text-color);
+}
+
+#contact .contact-inner .contact-form .form-control input {
+  width: 100%;
+  padding: 7px 3px;
+  background-color: var(--secondary-bg);
+  border: none;
+  border-bottom: 2px solid var(--quatenary-text-color);
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+  font-size: 18px;
+}
+
+#contact .contact-inner .contact-form .form-control input::-webkit-input-placeholder {
+  font-style: italic;
+  font-size: 16px;
+}
+
+#contact .contact-inner .contact-form .form-control input:-ms-input-placeholder {
+  font-style: italic;
+  font-size: 16px;
+}
+
+#contact .contact-inner .contact-form .form-control input::-ms-input-placeholder {
+  font-style: italic;
+  font-size: 16px;
+}
+
+#contact .contact-inner .contact-form .form-control input::placeholder {
+  font-style: italic;
+  font-size: 16px;
+}
+
+#contact .contact-inner .contact-form .form-control textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  background-color: var(--secondary-bg);
+  border: none;
+  border-bottom: 2px solid var(--secondary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 18px;
+}
+
+#contact .contact-inner .contact-form .form-button button {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-text-color);
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#contact .contact-inner .contact-form .form-button button:hover {
+  background-color: green;
+}
+/*# sourceMappingURL=contact.css.map */

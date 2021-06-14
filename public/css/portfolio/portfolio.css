@@ -1,0 +1,278 @@
+#portfolio {
+  background-color: var(--secondary-bg);
+  padding: 100px 0 50px;
+}
+
+#portfolio > h2 {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-size: 30px;
+}
+
+#portfolio > h4 {
+  text-align: center;
+  font-weight: normal;
+  color: var(--secondary-text-color);
+}
+
+#portfolio .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+@media screen and (max-width: 800px) {
+  #portfolio .tags {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+  }
+}
+
+#portfolio .tags p {
+  color: var(--quatenary-text-color);
+  padding: 7px 10px;
+  border: 1px solid var(--quatenary-text-color);
+  border-radius: 10px;
+  margin: 10px 10px 0 0;
+  font-size: 13px;
+}
+
+#portfolio .tags p:hover {
+  color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+}
+
+#portfolio .portfolio-inner {
+  display: -ms-grid;
+  display: grid;
+  width: 74%;
+  margin: 0 auto;
+}
+
+#portfolio .portfolio-inner .tab-head {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+#portfolio .portfolio-inner .tab-head .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  #portfolio .portfolio-inner .tab-head .tabs {
+    width: 100%;
+    grid-gap: 20px 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+#portfolio .portfolio-inner .tab-head .tabs .active.tab {
+  background-color: #0a500a;
+}
+
+#portfolio .portfolio-inner .tab-head .tabs li {
+  padding: 10px 20px;
+  background-color: var(--primary-text-color);
+  margin: 0 10px;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+#portfolio .portfolio-inner .tab-head .tabs li:hover {
+  background-color: green;
+}
+
+#portfolio .portfolio-inner .tab-contents {
+  padding-top: 40px;
+}
+
+#portfolio .portfolio-inner .tab-contents .tab-content {
+  display: none;
+}
+
+#portfolio .portfolio-inner .tab-contents .active.tab-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+#portfolio .portfolio-inner .tab-contents .project-buttons {
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+#portfolio .portfolio-inner .tab-contents .project-buttons a button {
+  padding: 10px 15px;
+  background-color: var(--primary-text-color);
+  border: none;
+  color: var(--secondary-text-color);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#portfolio .portfolio-inner .tab-contents .project-buttons a button:hover {
+  background-color: green;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .coinin {
+  padding-bottom: 40px;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .coinin .coinin-pic {
+  padding-bottom: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .coinin .coinin-pic img {
+  width: 100%;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .coinin .coinin-list {
+  color: var(--quatenary-text-color);
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .coinin .coinin-list li {
+  list-style-type: disc;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .coinin .coinin-text h2 {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .coinin .coinin-text p {
+  color: var(--quatenary-text-color);
+  padding-top: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .barbyn {
+  padding: 40px 0;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .barbyn .barbyn-pic {
+  padding-bottom: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .barbyn .barbyn-pic img {
+  width: 100%;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .barbyn .barbyn-text h2 {
+  color: var(--secondary-text-color);
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+#portfolio .portfolio-inner .tab-contents #react .barbyn .barbyn-text p {
+  color: var(--quatenary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #node-js .fashionbit .fashionbit-pic {
+  padding-bottom: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #node-js .fashionbit .fashionbit-pic img {
+  width: 100%;
+}
+
+#portfolio .portfolio-inner .tab-contents #node-js .fashionbit .fashionbit-text u {
+  color: var(--primary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #node-js .fashionbit .fashionbit-text h2 {
+  color: var(--secondary-text-color);
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+#portfolio .portfolio-inner .tab-contents #node-js .fashionbit .fashionbit-text p {
+  color: var(--quatenary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #node-js .fashionbit .fashionbit-text ul {
+  color: var(--quatenary-text-color);
+  padding: 10px 0 10px 20px;
+}
+
+#portfolio .portfolio-inner .tab-contents #node-js .fashionbit .fashionbit-text ul li {
+  list-style-type: disc;
+}
+
+#portfolio .portfolio-inner .tab-contents #design .foodsko .foodsko-pic {
+  padding-bottom: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #design .foodsko .foodsko-pic img {
+  width: 100%;
+}
+
+#portfolio .portfolio-inner .tab-contents #design .foodsko .foodsko-text h2 {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #design .foodsko .foodsko-text p {
+  color: var(--secondary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuydog {
+  padding-bottom: 40px;
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuydog .gobuydog-pic {
+  padding-bottom: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuydog .gobuydog-pic img {
+  width: 100%;
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuydog .gobuydog-text h2 {
+  color: var(--secondary-text-color);
+  padding: 10px 0;
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuydog .gobuydog-text p {
+  color: var(--quatenary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuydog .gobuydog-text u {
+  color: var(--primary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuypet .gobuypet-pic {
+  padding-bottom: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuypet .gobuypet-pic img {
+  width: 100%;
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuypet .gobuypet-text h2 {
+  color: var(--secondary-text-color);
+  padding: 10px 0;
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuypet .gobuypet-text p {
+  color: var(--quatenary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #wordpress .gobuypet .gobuypet-text u {
+  color: var(--primary-text-color);
+}
+/*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,182 @@
+#experience {
+  background-color: var(--secondary-bg);
+  padding: 80px 0;
+
+  > h2 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--primary-text-color);
+  }
+  > h4 {
+    text-align: center;
+    font-weight: normal;
+    color: var(--secondary-text-color);
+    padding-bottom: 40px;
+  }
+
+  .development h4,
+  .design h4,
+  .worked h4,
+  .tools h4 {
+    color: var(--primary-text-color);
+    font-weight: 400;
+  }
+
+  .experience-inner {
+    @media screen and (max-width: 1400px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 1050px) {
+      grid-template-columns: 50% 50%;
+    }
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 100%;
+      grid-gap: 30px 0;
+    }
+
+    margin: 0 auto;
+    width: 74%;
+    display: grid;
+    grid-template-columns: 25% 20% 16% 38%;
+    grid-gap: 10px 20px;
+    padding-top: 30px;
+
+    h4 {
+      font-size: 21px;
+      padding-bottom: 20px;
+    }
+
+    // STYLING FOR THE DEVELOPMENT SECTION
+    .development {
+      aside.development-inner {
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        grid-gap: 20px 5px;
+
+        i {
+          color: var(--quatenary-text-color);
+          font-size: 50px;
+        }
+
+        i:hover {
+          color: var(--primary-text-color);
+        }
+      }
+    }
+
+    // STYLING FOR THE DESIGN SECTION
+    .design {
+      aside {
+        display: grid;
+        grid-template-columns: 100%;
+
+        div:first-child {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          margin-bottom: 20px;
+        }
+
+        div.design-image {
+          display: grid;
+          grid-template-columns: 50% 30%;
+        }
+
+        i {
+          font-size: 50px;
+          color: var(--quatenary-text-color);
+        }
+
+        .photoshop {
+          background-image: url("/assets/images/adobe-photoshop.png");
+          background-repeat: none;
+          background-size: cover;
+          width: 50px;
+          height: 50px;
+        }
+
+        .illustrator {
+          background-image: url("/assets/images/adobe-illustrator.png");
+          background-repeat: none;
+          background-size: cover;
+          width: 50px;
+          height: 50px;
+        }
+
+        p {
+          color: var(--quatenary-text-color);
+          font-size: 18px;
+          display: block;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    // STYLING TOOLS
+    .tools {
+      aside.aside-tools {
+        padding-left: 20px;
+        ul li {
+          list-style-type: "\2713";
+          color: var(--quatenary-text-color);
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    // WORKED SECTION
+    .worked {
+      .worked-inner div {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding: 5px 0;
+
+        li:first-child {
+          p {
+            font-weight: bold;
+            color: var(--secondary-text-color);
+            padding-bottom: 5px;
+          }
+
+          span {
+            color: var(--quatenary-text-color);
+            font-style: italic;
+          }
+        }
+
+        li:last-child {
+          color: var(--quatenary-text-color);
+        }
+      }
+    }
+  }
+
+  .experience-resume {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 35%;
+    justify-content: center;
+
+    .resume-btn {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+
+      button {
+        padding: 13px 25px;
+        cursor: pointer;
+        background-color: var(--primary-text-color);
+        color: var(--secondary-text-color);
+        font-size: 16px;
+        border: none;
+        margin-right: 10px;
+      }
+
+      button:hover {
+        background-color: green;
+      }
+    }
+  }
+}

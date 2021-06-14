@@ -1,0 +1,127 @@
+#about {
+  background-color: var(--secondary-bg);
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  // THE ABOUT INNER SECTION
+  .about-inner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 74%;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 100%;
+    }
+
+    .about-image {
+      @media screen and (max-width: 1200px) {
+        margin-left: -40%;
+      }
+      @media screen and (max-width: 1000px) {
+        margin-left: -60%;
+      }
+
+      @media screen and (max-width: 800px) {
+        margin-left: -30%;
+      }
+      div {
+        background-image: url("/assets/images/my-photo.jpg");
+        width: 350px;
+        height: 350px;
+        background-size: cover;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-left: 25%;
+      }
+    }
+
+    .about-text {
+      padding-top: 70px;
+      font-size: 19px;
+
+      h3 {
+        text-transform: uppercase;
+        color: var(--primary-text-color);
+        font-size: 30px;
+      }
+
+      h4 {
+        color: var(--secondary-text-color);
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      p {
+        color: var(--quatenary-text-color);
+        padding-top: 15px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  // THE ABOUT INFO SECTION
+
+  .about-info {
+    margin: 0 auto;
+    width: 74%;
+
+    @media screen and (max-width: 1200px) {
+      width: 90%;
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 30px;
+      color: var(--primary-text-color);
+    }
+
+    .sub-heading {
+      text-align: center;
+      padding-bottom: 20px;
+      color: var(--secondary-text-color);
+      font-weight: 400;
+    }
+
+    .about-info-inner {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-gap: 10px;
+
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 50% 50%;
+      }
+
+      .info-item {
+        position: relative;
+
+        i:nth-child(2) {
+          position: absolute;
+          left: 5%;
+          top: 40%;
+          font-size: 40px;
+          color: var(--primary-text-color);
+        }
+        .fa-circle {
+          color: var(--primary-bg);
+          font-size: 60px;
+        }
+      }
+
+      h4 {
+        padding: 20px 0 10px;
+        font-size: 20px;
+        color: var(--secondary-text-color);
+        font-weight: 400;
+      }
+
+      p {
+        color: var(--quatenary-text-color);
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+  }
+}

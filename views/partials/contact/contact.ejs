@@ -1,0 +1,33 @@
+<section id='contact' >
+
+  <h2>CONTACT ME</h2>
+  <h4>YOU CAN DROP A MESSAGE THROUGH THE FORM BELOW</h4>
+
+  <article class="contact-inner" data-aos="fade-down" data-aos-duration="1500">
+    <form action="/add-message" method="POST" class="contact-form">
+      <div class="form-control">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="enter name" name="name" required/>
+      </div>
+    
+      <div class="form-control">
+        <label for='email'>Email: </label>
+        <input type="email" id="email" placeholder="enter email" name="email" required/>
+      </div> 
+    
+      <div class="form-control">
+        <label for="subject">Subject: </label>
+        <input type="text" id="subject" placeholder="enter subject" name="subject" />
+      </div>
+    
+      <div class="form-control">
+        <label for='message'>Message: </label>
+        <textarea id="message" placeholder="enter message" name="message"></textarea>
+      </div>
+
+      <div class="form-button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </article>
+</section>

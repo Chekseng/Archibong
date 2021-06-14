@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/blog/first-blog/first-blog.css" />
+  <title>First blog</title>
+</head>
+<body>
+  
+  <main class="main-blog-section">
+
+    <article class="main-blog-inner">
+
+      <div class="main-blog-banner first-blog">
+        <h2>How To Use The Coingecko Api</h2>
+      </div>
+
+      <div class="main-blog-text first-blog">
+
+        <p>
+          In this article, I will be walking you through how to use the <u>coingecko api</u> with <u>react.js hooks.</u>
+
+          <br />
+
+          But before i do that, this is what we will be building...
+        </p>
+
+        <img src="/assets/images/blog/coingecko-app.png" alt="coingecko-app" width="90%" />
+
+        <p>
+          First, create a new folder wherever you want on your desktop 
+
+          <br />
+
+          Open the command line and navigate to the folder you just created and type in 
+
+          <br />
+
+          <span class="text-simulator">
+            npx create-react-app .
+          </span>
+
+          <br />
+
+          This will create the react startup files in the present working directory.
+
+          <br />
+          <br />
+          Next install <u>axios</u>,
+          
+          <br />
+          <span class="text-simulator">
+            yarn add axios or npm install axios
+          </span>
+
+          <br />
+
+          Then in your app.js file import <u>useState and useEffect</u>
+          <br />
+          <span class="text-simulator">
+            import { useState, useEffect } from 'react'
+          </span>
+
+          <br />
+          Then go ahead and delete everything inside the <u>div</u> with <u>className="App"</u>
+          <br />
+          Now we have to create two states,
+          the first holds the data we will get from the api 
+          second holds the loading state of the data
+          <br />
+          <br />
+          <span class="text-simulator">
+            const [data,setData] = useState([])
+            <br />
+            const [loading,isLoading] = useState(false)
+          </span>
+
+          <br />
+          <br />
+          By now your app.js should look like this
+        </p>
+
+        <img src="/assets/images/blog/first-coingecko.png" alt="first-coingecko" width="90%" />
+
+        <p>
+          <br />
+          Next is the intresting part, we are finally going to fetch the data.
+          <br />
+          So, go ahead and use the useEffect() under the last state on line 6.
+
+          <br />
+          <br />
+          This is the api key you will need 
+          <br />
+          <u>'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'</u>
+          <br />
+          <br />
+          Your App function should look like this by now..
+        </p>
+
+        <img src="/assets/images/blog/second-coingecko.png" alt="second-coingecko" width="90%" />
+
+        <p class="app-explained">
+          To explain what i just did in the App function
+        </p>
+
+        <li>1. Defined the useEffect hook with an empty dependency array.</li>
+        <li>2. Created a function inside the use effect hook that uses async</li>
+        <li>3. Used <u>axios</u> to get the data by passing the api key into the get method of <u>axios</u></li>
+        <li>3. Awaited the data gotten by axios since it is an async call</li>
+        <li>4. Used a <u>then(), catch()</u> block to get the data and error</li>
+        <li>5. In the then block, setted <u>isLoading</u> to false first then get the data. Lastly, return <u>isLoading</u> to true.
+          This is the prevent having an <u style="color: red">undefined error</u> if the async call takes a lot of time.</li>
+        <li>6. Finally, called the function on line 19</li>
+
+        <p>
+          <br />
+          <br />
+          After you are done with the logic, we can write the <u>jsx</u> to display the data we fetched.
+
+          The code will look like this.
+        </p>
+
+        <img src="/assets/images/blog/coingecko-jsx.png" alt="coingecko-jsx" width="90%" />
+
+        <p>You can go ahead and style the jsx to suit your taste or you could get the source code from <u><a href="#" style="color: greenyellow">here</a></u></p>
+
+        <p>
+          <br />
+
+          Viola!! That is the basic use of coingecko api. You can try using the api more and do tons of things with it.
+        </p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

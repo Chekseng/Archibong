@@ -1,0 +1,199 @@
+#experience {
+  background-color: var(--secondary-bg);
+  padding: 80px 0;
+}
+
+#experience > h2 {
+  text-align: center;
+  font-size: 30px;
+  color: var(--primary-text-color);
+}
+
+#experience > h4 {
+  text-align: center;
+  font-weight: normal;
+  color: var(--secondary-text-color);
+  padding-bottom: 40px;
+}
+
+#experience .development h4,
+#experience .design h4,
+#experience .worked h4,
+#experience .tools h4 {
+  color: var(--primary-text-color);
+  font-weight: 400;
+}
+
+#experience .experience-inner {
+  margin: 0 auto;
+  width: 74%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 20% 16% 38%;
+      grid-template-columns: 25% 20% 16% 38%;
+  grid-gap: 10px 20px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  #experience .experience-inner {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #experience .experience-inner {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #experience .experience-inner {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 30px 0;
+  }
+}
+
+#experience .experience-inner h4 {
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+
+#experience .experience-inner .development aside.development-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 31% 31% 31%;
+      grid-template-columns: 31% 31% 31%;
+  grid-gap: 20px 5px;
+}
+
+#experience .experience-inner .development aside.development-inner i {
+  color: var(--quatenary-text-color);
+  font-size: 50px;
+}
+
+#experience .experience-inner .development aside.development-inner i:hover {
+  color: var(--primary-text-color);
+}
+
+#experience .experience-inner .design aside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+#experience .experience-inner .design aside div:first-child {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-bottom: 20px;
+}
+
+#experience .experience-inner .design aside div.design-image {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 30%;
+      grid-template-columns: 50% 30%;
+}
+
+#experience .experience-inner .design aside i {
+  font-size: 50px;
+  color: var(--quatenary-text-color);
+}
+
+#experience .experience-inner .design aside .photoshop {
+  background-image: url("/assets/images/adobe-photoshop.png");
+  background-repeat: none;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+#experience .experience-inner .design aside .illustrator {
+  background-image: url("/assets/images/adobe-illustrator.png");
+  background-repeat: none;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+#experience .experience-inner .design aside p {
+  color: var(--quatenary-text-color);
+  font-size: 18px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+#experience .experience-inner .tools aside.aside-tools {
+  padding-left: 20px;
+}
+
+#experience .experience-inner .tools aside.aside-tools ul li {
+  list-style-type: "\2713";
+  color: var(--quatenary-text-color);
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+#experience .experience-inner .worked .worked-inner div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  padding: 5px 0;
+}
+
+#experience .experience-inner .worked .worked-inner div li:first-child p {
+  font-weight: bold;
+  color: var(--secondary-text-color);
+  padding-bottom: 5px;
+}
+
+#experience .experience-inner .worked .worked-inner div li:first-child span {
+  color: var(--quatenary-text-color);
+  font-style: italic;
+}
+
+#experience .experience-inner .worked .worked-inner div li:last-child {
+  color: var(--quatenary-text-color);
+}
+
+#experience .experience-resume {
+  padding-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35%;
+      grid-template-columns: 35%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#experience .experience-resume .resume-btn {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#experience .experience-resume .resume-btn button {
+  padding: 13px 25px;
+  cursor: pointer;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  border: none;
+  margin-right: 10px;
+}
+
+#experience .experience-resume .resume-btn button:hover {
+  background-color: green;
+}
+/*# sourceMappingURL=experience.css.map */

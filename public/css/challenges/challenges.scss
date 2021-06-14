@@ -1,0 +1,55 @@
+// STYLING SHEET FOR CHALLENGES SECTION
+#challenges {
+  background-color: var(--secondary-bg);
+  padding: 80px 0 100px;
+
+  @media screen and (max-width: 1000px) {
+    padding: 50px 0;
+  }
+
+  > h2 {
+    text-align: center;
+    color: var(--primary-text-color);
+    font-size: 30px;
+  }
+
+  > h4 {
+    text-align: center;
+    font-weight: normal;
+    color: var(--secondary-text-color);
+    padding-bottom: 40px;
+  }
+
+  .challenges-inner {
+    @media screen and (max-width: 1100px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 50% 50%;
+    }
+    width: 74%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+    justify-content: center;
+
+    div {
+      text-align: center;
+      padding: 80px 0;
+      background-color: var(--quatenary-bg);
+      cursor: pointer;
+      h4 {
+        color: var(--quatenary-text-color);
+        font-size: 26px;
+        font-weight: normal;
+        transition: all ease 0.5s;
+      }
+    }
+
+    div:hover h4 {
+      color: var(--primary-text-color);
+    }
+  }
+}

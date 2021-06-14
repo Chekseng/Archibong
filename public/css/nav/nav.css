@@ -1,0 +1,191 @@
+.navbar {
+  background-color: var(--primary-bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  padding: 20px 200px 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .nav-logo a {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.navbar .nav-logo a :hover {
+  color: var(--primary-text-color);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.navbar .nav-logo a span {
+  font-family: "Vampiro One", cursive;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: var(--secondary-text-color);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.navbar .nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar .nav-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5px 0;
+  }
+}
+
+.navbar .nav-menu ul li {
+  padding: 5px 15px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar .nav-menu ul li {
+    padding: 5px 0;
+  }
+  .navbar .nav-menu ul li :hover {
+    color: var(--primary-text-color);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+}
+
+.navbar .nav-menu ul li :hover {
+  color: var(--primary-text-color);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.navbar .nav-menu ul li a {
+  color: var(--secondary-text-color);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.navbar .nav-menu ul li.active a {
+  color: var(--primary-text-color);
+}
+
+.nav-toggle {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  color: var(--secondary-text-color);
+  margin: 20px;
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.nav-toggle :hover {
+  color: var(--primary-text-color);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.nav-toggle i {
+  font-size: 25px;
+  color: var(--tetiary-text-color);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+  .nav-menu {
+    margin-right: 0;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 15px 30px;
+  }
+  .nav-menu {
+    display: none;
+    height: 0;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    width: 100%;
+  }
+  .nav-menu ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    padding: 5px 0;
+  }
+  .nav-toggle {
+    display: block;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .show-mobile-nav {
+    display: block;
+    height: auto;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

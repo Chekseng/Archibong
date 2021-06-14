@@ -1,0 +1,83 @@
+// CSS STYLE SHEET FOR THE SECOND-BLOG TEMPLATE
+
+body {
+  background-color: var(--secondary-bg);
+}
+
+.main-blog-section {
+  .main-blog-inner {
+    .main-blog-banner {
+      padding: 120px;
+      background-position: center;
+      background-size: cover;
+
+      @media screen and (max-width: 900px) {
+        padding: 90px;
+      }
+
+      h2 {
+        color: var(--secondary-text-color);
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        word-spacing: 5px;
+
+        @media screen and (max-width: 900px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .main-blog-banner.second-blog {
+      background-image: var(--primary-gradient),
+        url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+
+    .main-blog-text {
+      width: 55%;
+      margin: 0 auto;
+      text-align: left;
+      color: var(--quatenary-text-color);
+      padding: 60px 0;
+
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+      }
+
+      p {
+        font-size: 20px;
+        word-spacing: 5px;
+      }
+
+      u {
+        color: var(--primary-text-color);
+      }
+
+      h3 {
+        color: var(--secondary-text-color);
+        font-family: "Rubik", sans-serif;
+        font-size: 25px;
+        padding-top: 20px;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-family: "Rubik", sans-serif;
+        padding-top: 20px;
+      }
+
+      .text-simulator {
+        background-color: var(--primary-bg);
+        width: 100%;
+        font-family: "PT serif", serif;
+        color: var(--secondary-text-color);
+        padding: 4px;
+
+        p {
+          font-size: 20px;
+          word-spacing: 5px;
+        }
+      }
+    }
+  }
+}

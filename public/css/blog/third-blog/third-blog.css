@@ -1,0 +1,71 @@
+body {
+  background-color: var(--secondary-bg);
+}
+
+.main-blog-section .main-blog-inner .main-blog-banner {
+  padding: 120px;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .main-blog-section .main-blog-inner .main-blog-banner {
+    padding: 90px;
+  }
+}
+
+.main-blog-section .main-blog-inner .main-blog-banner h2 {
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-blog-section .main-blog-inner .main-blog-banner h2 {
+    font-size: 20px;
+  }
+}
+
+.main-blog-section .main-blog-inner .main-blog-banner.third-blog {
+  background-image: var(--primary-gradient), url("https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.main-blog-section .main-blog-inner .main-blog-text {
+  width: 55%;
+  margin: 0 auto;
+  text-align: left;
+  color: var(--quatenary-text-color);
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-blog-section .main-blog-inner .main-blog-text {
+    width: 80%;
+  }
+}
+
+.main-blog-section .main-blog-inner .main-blog-text p {
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 35px;
+}
+
+.main-blog-section .main-blog-inner .main-blog-text u {
+  color: var(--primary-text-color);
+}
+
+.main-blog-section .main-blog-inner .main-blog-text h3 {
+  color: var(--secondary-text-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.main-blog-section .main-blog-inner .main-blog-text h4 {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  padding-top: 20px;
+}
+/*# sourceMappingURL=third-blog.css.map */

@@ -1,0 +1,144 @@
+#about {
+  background-color: var(--secondary-bg);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about .about-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  width: 74%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 800px) {
+  #about .about-inner {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #about .about-inner .about-image {
+    margin-left: -40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #about .about-inner .about-image {
+    margin-left: -60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #about .about-inner .about-image {
+    margin-left: -30%;
+  }
+}
+
+#about .about-inner .about-image div {
+  background-image: url("/assets/images/my-photo.jpg");
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 25%;
+}
+
+#about .about-inner .about-text {
+  padding-top: 70px;
+  font-size: 19px;
+}
+
+#about .about-inner .about-text h3 {
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  font-size: 30px;
+}
+
+#about .about-inner .about-text h4 {
+  color: var(--secondary-text-color);
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#about .about-inner .about-text p {
+  color: var(--quatenary-text-color);
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+#about .about-info {
+  margin: 0 auto;
+  width: 74%;
+}
+
+@media screen and (max-width: 1200px) {
+  #about .about-info {
+    width: 90%;
+  }
+}
+
+#about .about-info .heading {
+  text-align: center;
+  font-size: 30px;
+  color: var(--primary-text-color);
+}
+
+#about .about-info .sub-heading {
+  text-align: center;
+  padding-bottom: 20px;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+}
+
+#about .about-info .about-info-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  #about .about-info .about-info-inner {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+#about .about-info .about-info-inner .info-item {
+  position: relative;
+}
+
+#about .about-info .about-info-inner .info-item i:nth-child(2) {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  font-size: 40px;
+  color: var(--primary-text-color);
+}
+
+#about .about-info .about-info-inner .info-item .fa-circle {
+  color: var(--primary-bg);
+  font-size: 60px;
+}
+
+#about .about-info .about-info-inner h4 {
+  padding: 20px 0 10px;
+  font-size: 20px;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+}
+
+#about .about-info .about-info-inner p {
+  color: var(--quatenary-text-color);
+  font-weight: 300;
+  font-size: 16px;
+}
+/*# sourceMappingURL=about.css.map */

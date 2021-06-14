@@ -1,0 +1,279 @@
+// THE STYLESHEET FOR THE PORTFOLIO SECTION
+
+#portfolio {
+  background-color: var(--secondary-bg);
+  padding: 100px 0 50px;
+
+  > h2 {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 30px;
+  }
+
+  > h4 {
+    text-align: center;
+    font-weight: normal;
+    color: var(--secondary-text-color);
+  }
+
+  .tags {
+    @media screen and (max-width: 800px) {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+    }
+    display: flex;
+    flex-flow: row;
+    p {
+      color: var(--quatenary-text-color);
+      padding: 7px 10px;
+      border: 1px solid var(--quatenary-text-color);
+      border-radius: 10px;
+      margin: 10px 10px 0 0;
+      font-size: 13px;
+    }
+
+    p:hover {
+      color: var(--primary-text-color);
+      border: 1px solid var(--primary-text-color);
+    }
+  }
+
+  .portfolio-inner {
+    display: grid;
+    width: 74%;
+    margin: 0 auto;
+
+    .tab-head {
+      margin: 0 auto;
+      padding-top: 40px;
+
+      .tabs {
+        display: flex;
+        text-align: center;
+        @media screen and (max-width: 800px) {
+          width: 100%;
+          grid-gap: 20px 0;
+          display: grid;
+          grid-template-columns: 50% 50%;
+        }
+
+        .active.tab {
+          background-color: rgb(10, 80, 10);
+        }
+
+        li {
+          padding: 10px 20px;
+          background-color: var(--primary-text-color);
+          margin: 0 10px;
+          color: var(--secondary-text-color);
+          cursor: pointer;
+        }
+
+        li:hover {
+          background-color: green;
+        }
+      }
+    }
+
+    // TAB CONTENTS SECTION
+    .tab-contents {
+      padding-top: 40px;
+
+      .tab-content {
+        display: none;
+      }
+
+      .active.tab-content {
+        display: grid;
+        grid-template-columns: 100%;
+      }
+
+      .project-buttons {
+        cursor: pointer;
+        padding-bottom: 20px;
+        a button {
+          padding: 10px 15px;
+          background-color: var(--primary-text-color);
+          border: none;
+          color: var(--secondary-text-color);
+          margin-right: 10px;
+          cursor: pointer;
+        }
+
+        a button:hover {
+          background-color: green;
+        }
+      }
+
+      // THE REACT PROJECTS STYLESHEET
+      #react {
+        .coinin {
+          padding-bottom: 40px;
+
+          .coinin-pic {
+            padding-bottom: 10px;
+            img {
+              width: 100%;
+            }
+          }
+
+          .coinin-list {
+            color: var(--quatenary-text-color);
+            padding-top: 10px;
+            padding-left: 20px;
+
+            li {
+              list-style-type: disc;
+            }
+          }
+          .coinin-text {
+            h2 {
+              color: var(--secondary-text-color);
+              font-weight: 400;
+            }
+
+            p {
+              color: var(--quatenary-text-color);
+              padding-top: 10px;
+            }
+          }
+        }
+
+        .barbyn {
+          padding: 40px 0;
+          .barbyn-pic {
+            padding-bottom: 10px;
+            img {
+              width: 100%;
+            }
+          }
+
+          .barbyn-text {
+            h2 {
+              color: var(--secondary-text-color);
+              padding-bottom: 10px;
+              font-weight: 400;
+            }
+
+            p {
+              color: var(--quatenary-text-color);
+            }
+          }
+        }
+      }
+
+      // THE NODE.JS PROJECT STYLING
+      #node-js {
+        .fashionbit {
+          .fashionbit-pic {
+            padding-bottom: 10px;
+            img {
+              width: 100%;
+            }
+          }
+
+          .fashionbit-text {
+            u {
+              color: var(--primary-text-color);
+            }
+
+            h2 {
+              color: var(--secondary-text-color);
+              padding-bottom: 10px;
+              font-weight: 400;
+            }
+
+            p {
+              color: var(--quatenary-text-color);
+            }
+
+            ul {
+              color: var(--quatenary-text-color);
+              padding: 10px 0 10px 20px;
+
+              li {
+                list-style-type: disc;
+              }
+            }
+          }
+        }
+      }
+
+      // THE FOODSKO PROJECT STYLING
+      #design {
+        .foodsko {
+          .foodsko-pic {
+            padding-bottom: 10px;
+            img {
+              width: 100%;
+            }
+          }
+
+          .foodsko-text {
+            h2 {
+              color: var(--secondary-text-color);
+              font-weight: 400;
+              padding-bottom: 10px;
+            }
+
+            p {
+              color: var(--secondary-text-color);
+            }
+          }
+        }
+      }
+
+      // THE WORDPRESS PROJECT STYLING
+      #wordpress {
+        .gobuydog {
+          padding-bottom: 40px;
+          .gobuydog-pic {
+            padding-bottom: 10px;
+            img {
+              width: 100%;
+            }
+          }
+
+          .gobuydog-text {
+            h2 {
+              color: var(--secondary-text-color);
+              padding: 10px 0;
+            }
+
+            p {
+              color: var(--quatenary-text-color);
+            }
+
+            u {
+              color: var(--primary-text-color);
+            }
+          }
+        }
+
+        .gobuypet {
+          .gobuypet-pic {
+            padding-bottom: 10px;
+            img {
+              width: 100%;
+            }
+          }
+
+          .gobuypet-text {
+            h2 {
+              color: var(--secondary-text-color);
+              padding: 10px 0;
+            }
+
+            p {
+              color: var(--quatenary-text-color);
+            }
+
+            u {
+              color: var(--primary-text-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

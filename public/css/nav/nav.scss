@@ -1,0 +1,147 @@
+.navbar {
+  background-color: var(--primary-bg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all ease 0.5s;
+  padding: 20px 200px 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .nav-logo {
+    a {
+      transition: all ease 0.5s;
+      :hover {
+        color: var(--primary-text-color);
+        transition: all ease 0.5s;
+      }
+      span {
+        font-family: "Vampiro One", cursive;
+        text-transform: uppercase;
+        font-size: 25px;
+        color: var(--secondary-text-color);
+        transition: all ease 0.5s;
+      }
+    }
+  }
+
+  .nav-menu {
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0;
+      }
+
+      li {
+        @media screen and (max-width: 800px) {
+          padding: 5px 0;
+
+          :hover {
+            color: var(--primary-text-color);
+            transition: all ease 0.5s;
+          }
+        }
+        padding: 5px 15px;
+        transition: all ease 0.5s;
+
+        :hover {
+          color: var(--primary-text-color);
+          transition: all ease 0.5s;
+        }
+
+        a {
+          color: var(--secondary-text-color);
+          transition: all ease 0.5s;
+        }
+      }
+
+      li.active a {
+        color: var(--primary-text-color);
+      }
+    }
+  }
+}
+
+.nav-toggle {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  color: var(--secondary-text-color);
+  margin: 20px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+
+  :hover {
+    color: var(--primary-text-color);
+    transition: all ease 0.5s;
+  }
+
+  i {
+    font-size: 25px;
+    color: var(--tetiary-text-color);
+    transition: all ease 0.5s;
+  }
+}
+
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all ease 0.5s;
+}
+
+// Tablet Menu
+@media screen and (max-width: 1400px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+
+  .nav-menu {
+    margin-right: 0;
+    padding-top: 15px;
+  }
+}
+
+// Mobile Menu
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 15px 30px;
+  }
+
+  .nav-menu {
+    display: none;
+    height: 0;
+    transition: all ease 0.5s;
+    width: 100%;
+  }
+
+  .nav-menu ul li {
+    display: flex;
+    flex-flow: row;
+    padding: 5px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    transition: all ease 0.5s;
+  }
+
+  .show-mobile-nav {
+    display: block;
+    height: auto;
+    transition: all ease 0.5s;
+  }
+}

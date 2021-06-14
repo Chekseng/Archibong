@@ -1,0 +1,86 @@
+// CSS TEMPLATE FOR THE FIRST BLOG TEMPLATE
+
+body {
+  background-color: var(--secondary-bg);
+}
+
+.main-blog-section {
+  .main-blog-inner {
+    .main-blog-banner {
+      padding: 120px;
+      background-position: center;
+      background-size: cover;
+
+      @media screen and (max-width: 900px) {
+        padding: 90px;
+      }
+
+      h2 {
+        color: var(--secondary-text-color);
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        word-spacing: 5px;
+
+        @media screen and (max-width: 900px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .main-blog-banner.first-blog {
+      background-image: var(--primary-gradient),
+        url("https://images.pexels.com/photos/315788/pexels-photo-315788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+  }
+
+  .main-blog-text {
+    width: 55%;
+    margin: 0 auto;
+    text-align: left;
+    color: var(--quatenary-text-color);
+    padding: 60px 0;
+
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+    }
+
+    p {
+      font-size: 20px;
+      word-spacing: 5px;
+      line-height: 35px;
+    }
+
+    u {
+      color: var(--primary-text-color);
+    }
+
+    li {
+      padding: 10px 0;
+      font-size: 18px;
+      word-spacing: 3px;
+    }
+
+    h3 {
+      color: var(--secondary-text-color);
+      font-family: "Rubik", sans-serif;
+      font-size: 25px;
+      padding-top: 20px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-family: "Rubik", sans-serif;
+      padding-top: 20px;
+    }
+
+    .text-simulator {
+      background-color: var(--primary-bg);
+      width: 100%;
+      font-family: "PT serif", serif;
+      color: var(--secondary-text-color);
+      padding: 4px 10px;
+      font-size: 17px;
+    }
+  }
+}

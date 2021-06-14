@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-text-color: rgb(57, 166, 41);
+  --secondary-text-color: rgb(255, 255, 255);
+  --tetiary-text-color: rgb(230, 230, 230);
+  --quatenary-text-color: #bbb;
+  --primary-bg: rgb(31, 31, 31);
+  --secondary-bg: rgb(51, 51, 51);
+  --tetiary-bg: rgb(29, 32, 29);
+  --quatenary-bg: rgb(66, 66, 66);
+  --success-text: rgb(52, 238, 52);
+  --failure-text: rgb(238, 69, 69);
+  --primary-gradient: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Rubik", sans-serif;
+}
+
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+a,
+span,
+button,
+input,
+select,
+option,
+ul,
+li,
+table,
+td,
+tr,
+th,
+tbody,
+thead,
+label,
+textarea,
+::placeholder {
+  font-family: "Raleway", sans-serif;
+}

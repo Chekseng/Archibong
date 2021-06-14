@@ -1,0 +1,31 @@
+#footer {
+  background-color: var(--secondary-bg);
+  text-align: center;
+  padding: 40px 0 40px;
+}
+
+#footer .footer-icons {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+#footer .footer-icons i {
+  color: var(--secondary-text-color);
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+#footer .footer-icons i:hover {
+  color: var(--primary-text-color);
+}
+
+#footer p {
+  padding-bottom: 5px;
+  color: var(--quatenary-text-color);
+}
+
+#footer span {
+  color: var(--quatenary-text-color);
+  font-size: 15px;
+}
+/*# sourceMappingURL=footer.css.map */
