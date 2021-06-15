@@ -22,4 +22,4 @@ app.use('', portfolioContact)
 app.use(express.static('public'))
 
 // set the listening port
-app.listen(3002,() => console.log('the express server is up and running'))
+app.listen(8080,() => console.log('the express server is up and running'))
