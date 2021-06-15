@@ -1,11 +1,15 @@
+require('dotenv').config()
+
 const express = require('express')
 const mongoose = require('mongoose')
 const favicon = require('express-favicon')
 const portfolioContact = require('./routes/routes')
 const app = express()
 
+const SET_URI = process.env.MONGODB_URI;
+
 // connect to mongoose 
-mongoose.connect('mongodb+srv://Chekseng:Chekseng9663377.@cluster0.1ygtd.mongodb.net/Portfolio?retryWrites=true&w=majority', { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false})
+mongoose.connect(SET_URI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false})
 
 const db = mongoose.connection
 db.on('error', (err) => console.error(err))
