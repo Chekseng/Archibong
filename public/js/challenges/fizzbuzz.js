@@ -71,8 +71,8 @@ submitBtn.addEventListener('click', clearSubmit, false)
 clearBtn.addEventListener('click', clearFizzBuzz, false)
 
 // bind the submit button to the enter key
-document.addEventListener('keypress', function (e) {
-  if(e.key === 'Enter'){
-    clearSubmit();
-  }
-})
+// document.addEventListener('keypress', function (e) {
+//   if(e.key === 'Enter'){
+//     clearSubmit();
+//   }
+// })

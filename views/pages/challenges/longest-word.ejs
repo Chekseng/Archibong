@@ -5,13 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS LINKS -->
+  <!-- STYLING SHEET -->
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="stylesheet" href="/css/challenges/longest-word/longest-word.css" />
 
   <!-- JAVASCRIPT LINKS -->
   <script src="/js/challenges/longest-word.js" defer></script>
-  <title>Archibong | Longest Word Challenge</title>
+
+  <title>Archibong | <%- title %>
+  </title>
 </head>
 <body>
   
@@ -27,7 +29,7 @@
       </div>
       
       <div class="longest-word-inputs">
-        <input type="text" class="longest-word-input" required maxlength="45" />
+        <input type="text" class="longest-word-input" required maxlength="45" placeholder="enter a sentence" />
       </div>
       
       <div class="longest-word-button">

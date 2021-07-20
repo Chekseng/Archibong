@@ -15,18 +15,31 @@ html {
   scroll-behavior: smooth;
 }
 
+// :root {
+//   --primary-text-color: rgb(57, 166, 41);
+//   --secondary-text-color: rgb(255, 255, 255);
+//   --tetiary-text-color: rgb(230, 230, 230);
+//   --quatenary-text-color: #bbb;
+//   --primary-bg: rgb(31, 31, 31);
+//   --secondary-bg: rgb(51, 51, 51);
+//   --tetiary-bg: rgb(29, 32, 29);
+//   --quatenary-bg: rgb(66, 66, 66);
+//   --success-text: rgb(52, 238, 52);
+//   --failure-text: rgb(238, 69, 69);
+//   --primary-gradient: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+// }
+
 :root {
-  --primary-text-color: rgb(57, 166, 41);
+  --primary-text-color: rgb(46, 172, 104);
   --secondary-text-color: rgb(255, 255, 255);
-  --tetiary-text-color: rgb(230, 230, 230);
-  --quatenary-text-color: #bbb;
-  --primary-bg: rgb(31, 31, 31);
-  --secondary-bg: rgb(51, 51, 51);
-  --tetiary-bg: rgb(29, 32, 29);
-  --quatenary-bg: rgb(66, 66, 66);
+  --tetiary-text-color: rgb(255, 255, 255);
+  --quatenary-text-color: rgb(255, 255, 255);
+  --primary-bg: rgb(24, 43, 60);
+  --secondary-bg: rgb(18, 35, 51);
+  --tetiary-bg: rgb(30, 56, 78);
+  --quatenary-bg: rgb(30, 56, 78);
   --success-text: rgb(52, 238, 52);
   --failure-text: rgb(238, 69, 69);
-  --primary-gradient: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
 }
 
 a {

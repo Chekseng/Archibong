@@ -4,6 +4,7 @@ const titleCaseInput = document.querySelector('.title-case-input')
 const titleCaseBtn = document.querySelector('.title-case-btn')
 const titleCaseOutput = document.querySelector('.title-case-output')
 
+
 // LOGIC FOR THE TITLE-CASE FUNCTION
 function printTitleCase(){
   // get the input from user and convert data type to array data type

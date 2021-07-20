@@ -112,6 +112,7 @@
 
           .coinin-pic {
             padding-bottom: 10px;
+
             img {
               width: 100%;
             }
@@ -173,6 +174,80 @@
           }
 
           .fashionbit-text {
+            u {
+              color: var(--primary-text-color);
+            }
+
+            h2 {
+              color: var(--secondary-text-color);
+              padding-bottom: 10px;
+              font-weight: 400;
+            }
+
+            p {
+              color: var(--quatenary-text-color);
+            }
+
+            ul {
+              color: var(--quatenary-text-color);
+              padding: 10px 0 10px 20px;
+
+              li {
+                list-style-type: disc;
+              }
+            }
+          }
+        }
+      }
+
+      #next-js {
+        .country-list {
+          .country-list-pic {
+            padding-bottom: 10px;
+            img {
+              width: 100%;
+              filter: drop-shadow(0px 1px 10px #000000);
+            }
+          }
+
+          .country-list-text {
+            u {
+              color: var(--primary-text-color);
+            }
+
+            h2 {
+              color: var(--secondary-text-color);
+              padding-bottom: 10px;
+              font-weight: 400;
+            }
+
+            p {
+              color: var(--quatenary-text-color);
+            }
+
+            ul {
+              color: var(--quatenary-text-color);
+              padding: 10px 0 10px 20px;
+
+              li {
+                list-style-type: disc;
+              }
+            }
+          }
+        }
+      }
+
+      #vue-js {
+        .movie-lab {
+          .movie-lab-pic {
+            padding-bottom: 10px;
+            img {
+              width: 100%;
+              filter: drop-shadow(0px 1px 10px #000000);
+            }
+          }
+
+          .movie-lab-text {
             u {
               color: var(--primary-text-color);
             }

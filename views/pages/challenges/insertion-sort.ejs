@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLING SHEET -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/challenges/sort-challenge/sort-challenge.css" />
+
+  <!-- JAVASCRIPT LINKS -->
+  <script src="/js/challenges/insertion-sort.js" defer></script>
+
+  <title>Archibong | <%- title %>
+  </title>
+</head>
+
+<body>
+  <section class="sort-challenge-section">
+
+    <article class="sort-challenge-inner">
+
+      <div class="description">
+        <h2>INSERTION SORT</h2>
+        <h4>Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less
+        efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort!</h4>
+
+        <h4 class="detail-warning">N/B: <span>Array Length must be less than <b>10</b> and Number range must be less than <b>999</b></span></h4>
+
+        <h4>Generate Random Numbers:</h4>
+      </div>
+
+      <div class="input-section">
+        <label>Array Length:
+          <input type="text" class="max-limit" maxlength="2" placeholder="enter number within range 0 - 10. e.g  9" /> 
+        </label>
+        <label>Number Range:
+          <input type="text"  class="max-range" maxlength="3" placeholder="enter number within range 0 - 999. e.g 200" /> 
+        </label>
+      </div>
+      
+      <div class="generate-button sort-challenge-buttons">
+        <button class="generate-number-button" type="submit">Generate</button>
+      </div>
+
+      <div class="generated-numbers"></div>
+
+      <div class="sort-button sort-challenge-buttons">
+        <button class="sort-number-button" type="submit">Insertion Sort</button>
+      </div>
+
+      <div class="sorted-result"></div>
+    </article>
+
+  </section>
+</body>
+</html>

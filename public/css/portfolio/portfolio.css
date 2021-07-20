@@ -212,6 +212,72 @@
   list-style-type: disc;
 }
 
+#portfolio .portfolio-inner .tab-contents #next-js .country-list .country-list-pic {
+  padding-bottom: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #next-js .country-list .country-list-pic img {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 1px 10px #000000);
+          filter: drop-shadow(0px 1px 10px #000000);
+}
+
+#portfolio .portfolio-inner .tab-contents #next-js .country-list .country-list-text u {
+  color: var(--primary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #next-js .country-list .country-list-text h2 {
+  color: var(--secondary-text-color);
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+#portfolio .portfolio-inner .tab-contents #next-js .country-list .country-list-text p {
+  color: var(--quatenary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #next-js .country-list .country-list-text ul {
+  color: var(--quatenary-text-color);
+  padding: 10px 0 10px 20px;
+}
+
+#portfolio .portfolio-inner .tab-contents #next-js .country-list .country-list-text ul li {
+  list-style-type: disc;
+}
+
+#portfolio .portfolio-inner .tab-contents #vue-js .movie-lab .movie-lab-pic {
+  padding-bottom: 10px;
+}
+
+#portfolio .portfolio-inner .tab-contents #vue-js .movie-lab .movie-lab-pic img {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 1px 10px #000000);
+          filter: drop-shadow(0px 1px 10px #000000);
+}
+
+#portfolio .portfolio-inner .tab-contents #vue-js .movie-lab .movie-lab-text u {
+  color: var(--primary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #vue-js .movie-lab .movie-lab-text h2 {
+  color: var(--secondary-text-color);
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+#portfolio .portfolio-inner .tab-contents #vue-js .movie-lab .movie-lab-text p {
+  color: var(--quatenary-text-color);
+}
+
+#portfolio .portfolio-inner .tab-contents #vue-js .movie-lab .movie-lab-text ul {
+  color: var(--quatenary-text-color);
+  padding: 10px 0 10px 20px;
+}
+
+#portfolio .portfolio-inner .tab-contents #vue-js .movie-lab .movie-lab-text ul li {
+  list-style-type: disc;
+}
+
 #portfolio .portfolio-inner .tab-contents #design .foodsko .foodsko-pic {
   padding-bottom: 10px;
 }

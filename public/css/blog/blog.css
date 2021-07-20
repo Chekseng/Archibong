@@ -86,7 +86,7 @@
 }
 
 #blog .blog-inner .blog-article h3 {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   font-size: 20px;
 }
 
